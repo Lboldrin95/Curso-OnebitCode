@@ -1,5 +1,12 @@
-let velocity = prompt(Qual a velocidade desejada?) 
+let velocity = prompt("Qual a velocidade desejada?") 
 
-if(velocity < 100) {
+if(velocity < 101) {
     console.log("Estamos numa velocidade aceitável")
-    } else { console.log("Entrando em velocidade risco")}
+    } else 
+        { if(velocity <=110) {
+            console.log("Cuidado! Próximo a velocidade de risco.")
+        }   else {
+                console.log("Entrando em velocidade risco")
+        }        
+}
+
